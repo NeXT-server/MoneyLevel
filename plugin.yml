@@ -29,8 +29,6 @@ permissions:
   moneylevel.*:
     default: op
     children:
-      moneylevel.lvup:
-        default: true
       moneylevel.viewlv:
         default: true
       moneylevel.toplv:
