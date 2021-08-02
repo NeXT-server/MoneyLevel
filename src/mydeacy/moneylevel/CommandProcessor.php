@@ -32,6 +32,7 @@ class CommandProcessor {
 		$economy = $this->economy;
 		$api = $this->api;
 		switch(strtolower($label)){
+				/*
 			case "lvup":
 				if(!isset($args[0])){
 					$sender->sendMessage($lang->getText("command.lvup.error.args"));
@@ -60,6 +61,7 @@ class CommandProcessor {
 					}
 				}
 				return true;
+				*/
 			case "toplv":
 				$page = @$args[0] ?: 1;
 				$task = new RankingTask($api->getAll(), $page, $sender->getName(),
