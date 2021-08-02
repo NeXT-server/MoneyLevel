@@ -8,10 +8,6 @@ depend: ["EconomyAPI"]
 load: STARTUP
 description: "Economy level plugin"
 commands:
-  lvup:
-    description: "Level up!"
-    usage: "/lvup {amount}"
-    permission: moneylevel.lvup
   viewlv:
     description: "view level"
     usage: "/viewlv {target}"
