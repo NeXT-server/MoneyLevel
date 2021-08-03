@@ -95,7 +95,7 @@ class CommandProcessor {
 					$before = $api->getLv($name);
 					$api->setLv((string)$name, $level);
 					if(!empty($player = Server::getInstance()->getPlayer($name))){
-						$api->setLvTag($player, $level, $before);
+						//$api->setLvTag($player, $level, $before);
 					}
 					$sender->sendMessage($lang->getReplacedText("command.setlv.success",
 						[$name, $level]));
