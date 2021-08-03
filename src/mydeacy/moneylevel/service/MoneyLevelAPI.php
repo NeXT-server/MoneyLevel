@@ -86,7 +86,6 @@ class MoneyLevelAPI implements APIService {
 		$beforeTag = $this->language->getReplacedText("player.tag", [$before], false);
 		$nameTag = str_replace($beforeTag, "", $player->getNameTag());
 		$displayTag = str_replace($beforeTag, "", $player->getDisplayName());
-		$player->setNameTag($tag.$nameTag);
 		$player->setDisplayName($tag.$displayTag);
 	}
 
