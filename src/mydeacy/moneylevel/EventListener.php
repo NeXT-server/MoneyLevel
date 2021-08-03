@@ -29,13 +29,13 @@ class EventListener implements Listener {
 			$api->registerUser($name);
 		}
 		$level = $api->getLv($name);
-		$api->setLvTag($player, $level);
+		//$api->setLvTag($player, $level);
 	}
 
 	function onLevelUp(MoneyLevelUpEvent $event){
 		$name = $event->getUser();
 		if(!empty($player = Server::getInstance()->getPlayer($name))){
-			$this->api->setLvTag($player, $event->getLv(), $event->getBeforeLv());
+			//$this->api->setLvTag($player, $event->getLv(), $event->getBeforeLv());
 		}
 	}
 }
