@@ -21,7 +21,7 @@ class SQLiteDB {
 		$names = strtolower($name);
 		$db->bindValue(":name", $names, SQLITE3_TEXT);
 		$db->bindValue(":defName", $name, SQLITE3_TEXT);
-		$db->bindValue(":level", 0, SQLITE3_INTEGER);
+		$db->bindValue(":level", 1, SQLITE3_INTEGER);
 		$db->execute();
 	}
 
