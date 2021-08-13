@@ -45,7 +45,7 @@ class RankingTask extends AsyncTask {
 	}
 
 	public function onCompletion(Server $server): void{
-		$result = $this->getResult();
+		$result = unserialize($this->getResult());
 		if($server->getPluginManager()->getPlugin("MoneyLevel")->isEnabled()){
 			$player = $server->getPlayer($this->name);
 			if(!empty($player)){
